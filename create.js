@@ -19,6 +19,19 @@ function createItems() {
     }
     products.amountInStock = Object.keys(products).find(inStock => products[inStock] === true) ? faker.number.int({min: 1, max: 15}) : "Item is not in stock at the moment.";
     //return object with valid keys 
-    console.log(products);
+    return products;
 }
 createItems()
+
+//create a function that pushing the object inside an array
+function itemHolder(number) {
+    //initialze a variable that equals an empty array
+    inventoryItems = [];
+    //set up loop so that each object that is created is pushed into the array
+    for (let i =0; i < number; i++) {
+        //push object into array
+        // return array
+}
+        
+
+}
