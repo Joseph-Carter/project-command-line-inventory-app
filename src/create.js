@@ -17,7 +17,7 @@ function createItems() {
         //tells how much of that item is in stock according to inStock being true, if false it will say otherwise 
         amountInStock: null,
     }
-    products.amountInStock = Object.keys(products).find(inStock => products[inStock] === true) ? faker.number.int({min: 1, max: 15}) : "Item is not in stock at the moment.";
+    products.amountInStock = Object.keys(products).find(inStock => products[inStock] === true) ? faker.number.int({min: 1, max: 50}) : "Item is not in stock at the moment.";
     //return object with valid keys 
     return products;
 }
@@ -30,8 +30,13 @@ function itemHolder(number) {
     //set up loop so that each object that is created is pushed into the array
     for (let i =0; i < number; i++) {
         //push object into array
-        // return array
+        inventoryItems.push(createItems())
+    }
+    // return array
+    return inventoryItems;
 }
-        
 
+module.exports = {
+    createItems,
+    itemHolder,
 }
