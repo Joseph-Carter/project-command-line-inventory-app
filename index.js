@@ -1,9 +1,9 @@
 const fs = require('fs')
 const _ = require('lodash')
-const { readJSONFile, writeJSONFile } = require("./src/helper/filehandler");
-const { deleteProduct } = require('./src/heleprs/destroy')
-const { showProductList } = require('./src/helpers/list')
-const { updateProducts } = require('./src/helpers/update')
+const { readJSONFile, writeJSONFile } = require("./src/helpers/filehandler");
+const { deleteProduct } = require('./src/helpers/delete')
+const { showItemsInCart } = require('./src/helpers/list')
+const { updateCart } = require('./src/helpers/update')
 const {createItems, itemHolder} = require("./src/create")
 
 
