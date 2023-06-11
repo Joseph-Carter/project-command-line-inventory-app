@@ -5,7 +5,6 @@ const { deleteProduct } = require('./src/helpers/delete')
 const { showItemsInCart } = require('./src/helpers/list')
 const { updateCart } = require('./src/helpers/update')
 const {createItems, itemHolder} = require("./src/create");
-const { parse } = require('path');
 
 const command = process.argv[2]
 
