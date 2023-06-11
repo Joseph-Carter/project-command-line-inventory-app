@@ -11,12 +11,18 @@ function showItemsInCart() {
       console.error('Error reading file:', err);
       return;
     }
-
     // Parse the JSON data into an array of objects
     const cartList = JSON.parse(data);
-
     //Iterate over each item in the cart
-
+    _.each(cartList, (item, index) => {
+        console.log(`Item ${index + 1}:`);
+        console.log(`ID: ${item.id}`);  // Print the item ID
+        console.log(`Name of item: ${item.itemName}`);  // Print the item's name
+        console.log(`In stock: ${item.inStock}`);  // Print the item's availability
+        console.log(`Price of Item: ${item.price}`);  // Print the item's price
+        console.log(`Amount in stock currently: ${item.stock}`);  // Print the item's current stock quantity
+        console.log('--------------------------------');
+      });
   });
 }
 
