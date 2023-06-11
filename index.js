@@ -10,23 +10,19 @@ const command = process.argv[2]
 
 switch (command) {
     case 'delete': {
-      //calls the deleteProduct() function to delete an item form the cart.
       const { deleteProduct } = require('./src/helpers/delete')
       const id = process.argv[3]
       deleteProduct(id);
       break;
     }
     case 'show':
-     //calls the showItemInCart() function to display the items in the cart
      showItemsInCart();
       break;
     case 'update': {
-     // retrieves the ID, availability, stock, and price from the coommand-line arguments
      const id = process.argv[3];
      const inStock = process.argv[4] === 'true';
      const stock = parseInt(process.argv[5]);
      const price = parseFloat(process.argv[6]);
-     // calls the updateCart() function to update an item in the cartw
      updateCart(id, inStock, stock, price);
       break;
     }

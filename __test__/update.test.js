@@ -10,7 +10,7 @@ describe('updateCart', () => {
         const price = 25.99
 
         fs.readFile = jest.fn((path, encoding, callback) => {
-            const data = '[{"id":"123","inStock":false,"amountInStock":0,"price":0.0}]';
+            const data = '[{"id": "123","inStock": false,"amountInStock": 0,"price": 0.0}]';
             callback(null, data);
         })
         fs.writeFile = jest.fn((path, data, options ,callback) => {
