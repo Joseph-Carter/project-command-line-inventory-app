@@ -1,0 +1,30 @@
+[
+  {
+    "id": "jqCl",
+    "itemName": "Table",
+    "inStock": false,
+    "price": "$38.44",
+    "amountInStock": "Item is not in stock at the moment."
+  },
+  {
+    "id": "1DoJ",
+    "itemName": "Shoes",
+    "inStock": true,
+    "price": "$20.07",
+    "amountInStock": 36
+  },
+  {
+    "id": "JYIw",
+    "itemName": "Cheese",
+    "inStock": false,
+    "price": "$18.95",
+    "amountInStock": "Item is not in stock at the moment."
+  },
+  {
+    "id": "Iuyn",
+    "itemName": "Towels",
+    "inStock": true,
+    "price": 9.34,
+    "amountInStock": 12
+  }
+]
